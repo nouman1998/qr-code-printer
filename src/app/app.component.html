@@ -1,0 +1,6 @@
+<button class="hidden-print" (click)="printPDF()">Print</button>
+
+<div *ngFor="let item of stringQrCodes">
+  <qrcode [qrdata]="'item'" [width]="250" [errorCorrectionLevel]="'M'"></qrcode>
+  <span style="margin-left:50px">{{ item }}</span>
+</div>
